@@ -54,6 +54,23 @@ public class RegistrationAndLogin {
  }
  return true;
  }
+ public static boolean CheckPasswordComplexity(){
+ Password = JOptionPane.showInputDialog("Password");
+ return Password.length()>=8&&
+ Password.matches(".*[A-Z].*")&&
+ Password.matches(".*[0-9].*")&&
+ Password.matches(".*[@,#,$,%,&,*]*.");
+ }
+ public static String registerUser(){
+ if (CheckPasswordComplexity() == false){
+ JOptionPane.showMessageDialog(null, "Password is"
+ + " not correct");
+ }else{
+ 
+ JOptionPane.showMessageDialog(null, "Password is" + " correct");
+ }
+ return Password ;
+ }
  
 }
 
