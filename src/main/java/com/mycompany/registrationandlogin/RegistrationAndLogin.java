@@ -35,7 +35,7 @@ public class RegistrationAndLogin {
  surname = JOptionPane.showInputDialog("Surname");
  return true;
  }
-      public static boolean CheckuserName(){
+ public static boolean CheckuserName(){
  String Underscore = "_";
  userName = JOptionPane.showInputDialog("UserName");
  if (userName.contains(Underscore) != false) {
