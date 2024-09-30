@@ -94,8 +94,7 @@ public class RegistrationAndLogin {
  //}
  return true;
  }
- 
-   public static boolean returnLoginstatus(boolean Logged){
+ public static boolean returnLoginstatus(boolean Logged){
  JOptionPane.showMessageDialog(null, "Click "+ "ok to login");
  if (loginUser(userName, Password)){
  JOptionPane.showMessageDialog(null,"Welcome"+
