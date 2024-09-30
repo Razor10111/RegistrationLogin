@@ -48,7 +48,7 @@ public class RegistrationAndLogin {
   }else {
  JOptionPane.showMessageDialog(null,
  "Username is not correct, please ensure that "
- + "your username contains an underscore and");
+ + "your username contains an underscore");
  }
  return true;
  }
@@ -82,8 +82,7 @@ public class RegistrationAndLogin {
  if (user2 == null ? userName == null : user2.equals(userName)){
  Password2 = JOptionPane.showInputDialog("Enter your password");
  while (Password == null ? Password2 != null : !Password.equals(Password2)){
- JOptionPane.showMessageDialog(null, "Pasword "
- + "does not match");
+ JOptionPane.showMessageDialog(null, "Pasword "+ "does not match");
  //Password2 = JOptionPane.showInputDialog("Enter your password");
  break;
  }
