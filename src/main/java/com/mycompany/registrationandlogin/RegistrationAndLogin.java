@@ -94,6 +94,19 @@ public class RegistrationAndLogin {
  //}
  return true;
  }
+    public static boolean returnLoginstatus(boolean Logged){
+ JOptionPane.showMessageDialog(null, "Click "+ "ok to login");
+ if (loginUser(userName, Password)){
+ JOptionPane.showMessageDialog(null,"Welcome"+
+ ""
+ + " "+
+ name +" "+ surname +" "+"it is good to see you");
+ }
+ else{
+ JOptionPane.showMessageDialog(null, "Incorrect "+ "login details");
+ }
+ return true;
+ }
 }
 
 
