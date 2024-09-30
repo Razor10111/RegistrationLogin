@@ -24,13 +24,12 @@ public class RegistrationAndLogin {
      Scanner input = new Scanner(System.in);
      EnterUserDetails();
      CheckuserName();
-     CheckPasswordComplexity();
      registerUser();
      loginUser(user2, Password);
      returnLoginstatus(true);
      }
  
-      public static boolean EnterUserDetails(){
+ public static boolean EnterUserDetails(){
  name = JOptionPane.showInputDialog("Name");
  surname = JOptionPane.showInputDialog("Surname");
  return true;
