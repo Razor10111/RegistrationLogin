@@ -105,7 +105,7 @@ public class RegistrationAndLogin {
  name +" "+ surname +" "+"it is good to see you again");
  }
  else{
- JOptionPane.showMessageDialog(null, "Incorrect "+ "login details");
+ JOptionPane.showMessageDialog(null, "Incorrect "+ "login details try again");
  }
  return true;
  }
