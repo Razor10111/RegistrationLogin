@@ -48,6 +48,20 @@ public class RegistrationAndLogin {
  }if (userName.length()<=5){
  JOptionPane.showMessageDialog(null,"Username " + "succesfull ");
  }
+  }else {
+ JOptionPane.showMessageDialog(null,
+ "Username is not correct, please ensure that "
+ + "your username contains an underscore and");
+ }
+ return true;
+ }
+ public static boolean CheckPasswordComplexity(){
+ Password = JOptionPane.showInputDialog("Password");
+ return Password.length()>=8&&
+ Password.matches(".*[A-Z].*")&&
+ Password.matches(".*[0-9].*")&&
+ Password.matches(".*[@,#,$,%,&,*]*.");
+ }
  
 }
 
