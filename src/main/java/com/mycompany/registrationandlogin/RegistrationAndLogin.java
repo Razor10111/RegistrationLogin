@@ -102,7 +102,7 @@ public class RegistrationAndLogin {
  JOptionPane.showMessageDialog(null,"Welcome"+
  ""
  + " "+
- name +" "+ surname +" "+"it is good to see you");
+ name +" "+ surname +" "+"it is good to see you again");
  }
  else{
  JOptionPane.showMessageDialog(null, "Incorrect "+ "login details");
