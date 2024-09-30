@@ -33,6 +33,26 @@ public class RegistrationAndLogin {
  surname = JOptionPane.showInputDialog("Surname");
  return true;
  }
+ 
+  public static boolean CheckuserName(){
+ String Underscore = "_";
+ userName = JOptionPane.showInputDialog("UserName");
+ if (userName.contains(Underscore) != false) {
+ while (userName.length()>5){
+ JOptionPane.showMessageDialog(null,"Username "
+ + "is not correct, please ensure that "
+ + "your username contains an underscore");
+ break;
+ }if (userName.length()<=5){
+ JOptionPane.showMessageDialog(null,"Username " + "succesfull ");
+ }
+  }else {
+ JOptionPane.showMessageDialog(null,
+ "Username is not correct, please ensure that "
+ + "your username contains an underscore");
+ }
+ return true;
+ }
 }
 
 
