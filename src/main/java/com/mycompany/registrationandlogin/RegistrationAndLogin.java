@@ -71,6 +71,29 @@ public class RegistrationAndLogin {
  return Password ;
  }
  
+   public static boolean loginUser(String User, String userPassword){
+ user2 = JOptionPane.showInputDialog("Enter your Username");
+ while (user2 == null ? userName != null : !user2.equals(userName)){
+ JOptionPane.showMessageDialog(null, " "
+ + "Username does not match");
+ //user2 = JOptionPane.showInputDialog("Enter your Username");
+ break;
+ }
+ if (user2 == null ? userName == null : user2.equals(userName)){
+ Password2 = JOptionPane.showInputDialog("Enter your password");
+ while (Password == null ? Password2 != null : !Password.equals(Password2)){
+ JOptionPane.showMessageDialog(null, "Pasword "
+ + "does not match");
+ //Password2 = JOptionPane.showInputDialog("Enter your password");
+ break;
+ }
+ }
+ if (Password == null ? Password2 == null : Password.equals(Password2)){
+ JOptionPane.showMessageDialog(null, "You have "+ "successfully logged in");
+ }
+ //}
+ return true;
+ }
 }
 
 
