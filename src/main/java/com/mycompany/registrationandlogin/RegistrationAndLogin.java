@@ -20,8 +20,18 @@ public class RegistrationAndLogin {
     
  public static void main(String[] args) {
      
+    //Create object scanner
+     Scanner input = new Scanner(System.in);
+     EnterUserDetails();
+     CheckuserName();
+     CheckPasswordComplexity();
+     registerUser();
+     loginUser(user2, Password);
+     returnLoginstatus(true);
+     }
+ 
 }
-}
+
 
  
  
