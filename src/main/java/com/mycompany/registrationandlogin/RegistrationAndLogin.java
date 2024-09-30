@@ -90,7 +90,7 @@ public class RegistrationAndLogin {
  }
  }
  if (Password == null ? Password2 == null : Password.equals(Password2)){
- JOptionPane.showMessageDialog(null, "You have "+ "successfully logged in");
+ JOptionPane.showMessageDialog(null, "You have "+ "successfully logged in your profile");
  }
  //}
  return true;
