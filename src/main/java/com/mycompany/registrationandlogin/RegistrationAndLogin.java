@@ -30,6 +30,12 @@ public class RegistrationAndLogin {
      returnLoginstatus(true);
      }
  
+ public static boolean EnterUserDetails(){
+ name = JOptionPane.showInputDialog("Name");
+ surname = JOptionPane.showInputDialog("Surname");
+ return true;
+ }
+ 
 }
 
 
